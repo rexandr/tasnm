@@ -37,4 +37,11 @@ class MenuQuery extends \yii\db\ActiveQuery
     {
         return parent::one($db);
     }
+
+    public function filterByDepth()
+    {
+        $this->andWhere(['depth' => 2]);
+        return $this;
+    }
+
 }

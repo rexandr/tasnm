@@ -4,14 +4,15 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Menu */
+/* @var $model common\models\Brands */
 
-$this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Menus'), 'url' => ['index']];
+$this->title = $model->brand_name;
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Brands'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="menu-view box box-primary">
+<div class="brands-view box box-primary">
     <div class="box-header">
+        <?= Html::a(Yii::t('app', 'Create Brand'), ['create'], ['class' => 'btn btn-success btn-flat']) ?>
         <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary btn-flat']) ?>
         <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger btn-flat',
@@ -26,12 +27,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'model' => $model,
             'attributes' => [
                 'id',
-                'lft',
-                'rgt',
-                'depth',
-                'name',
-                'url:url',
-                'text',
+                'brand_name',
+                'logo',
+                'sort_order',
+                'status',
+                'created_at:datetime',
+                'updated_at:datetime',
             ],
         ]) ?>
     </div>

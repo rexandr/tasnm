@@ -5,12 +5,12 @@ namespace common\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\Menu;
+use common\models\ProductAttribute;
 
 /**
- * MenuSearch represents the model behind the search form of `common\models\Menu`.
+ * ProductAttributeSearch represents the model behind the search form of `common\models\ProductAttribute`.
  */
-class MenuSearch extends Menu
+class ProductAttributeSearch extends ProductAttribute
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class MenuSearch extends Menu
     public function rules()
     {
         return [
-            [['id', 'lft', 'rgt', 'depth'], 'integer'],
-            [['name', 'url', 'text'], 'safe'],
+            [['id', 'status', 'sort_order', 'created_at', 'updated_at'], 'integer'],
+            [['attribute'], 'safe'],
         ];
     }
 
@@ -41,13 +41,13 @@ class MenuSearch extends Menu
      */
     public function search($params)
     {
-        $query = Menu::find();
+        $query = ProductAttribute::find();
 
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-            'sort' => ['defaultOrder' => ['id' => SORT_ASC]]
+            'sort' => ['defaultOrder' => ['id' => SORT_DESC]]
         ]);
 
         $this->load($params);
@@ -61,14 +61,13 @@ class MenuSearch extends Menu
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'lft' => $this->lft,
-            'rgt' => $this->rgt,
-            'depth' => $this->depth,
+            'status' => $this->status,
+            'sort_order' => $this->sort_order,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'url', $this->url])
-            ->andFilterWhere(['like', 'text', $this->text]);
+        $query->andFilterWhere(['like', 'attribute', $this->attribute]);
 
         return $dataProvider;
     }

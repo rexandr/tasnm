@@ -4,13 +4,13 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Menu */
+/* @var $model backend\models\product\Product */
 
 $this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Menus'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Products'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="menu-view box box-primary">
+<div class="product-view box box-primary">
     <div class="box-header">
         <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary btn-flat']) ?>
         <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
@@ -26,12 +26,18 @@ $this->params['breadcrumbs'][] = $this->title;
             'model' => $model,
             'attributes' => [
                 'id',
-                'lft',
-                'rgt',
-                'depth',
+                'menu_id',
+                'brands_id',
                 'name',
-                'url:url',
-                'text',
+                'rate',
+                'price',
+                'review',
+                'description',
+                'image',
+                'status',
+                'sort_order',
+                'created_at:datetime',
+                'updated_at:datetime',
             ],
         ]) ?>
     </div>

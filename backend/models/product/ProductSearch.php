@@ -1,16 +1,16 @@
 <?php
 
-namespace common\models;
+namespace backend\models\product;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\Menu;
+use backend\models\product\Product;
 
 /**
- * MenuSearch represents the model behind the search form of `common\models\Menu`.
+ * ProductSearch represents the model behind the search form of `backend\models\product\Product`.
  */
-class MenuSearch extends Menu
+class ProductSearch extends Product
 {
     /**
      * @inheritdoc
@@ -18,8 +18,9 @@ class MenuSearch extends Menu
     public function rules()
     {
         return [
-            [['id', 'lft', 'rgt', 'depth'], 'integer'],
-            [['name', 'url', 'text'], 'safe'],
+            [['id', 'menu_id', 'brands_id', 'rate', 'review', 'status', 'sort_order', 'created_at', 'updated_at'], 'integer'],
+            [['name', 'description', 'image'], 'safe'],
+            [['price'], 'number'],
         ];
     }
 
@@ -41,13 +42,13 @@ class MenuSearch extends Menu
      */
     public function search($params)
     {
-        $query = Menu::find();
+        $query = Product::find();
 
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-            'sort' => ['defaultOrder' => ['id' => SORT_ASC]]
+            'sort' => ['defaultOrder' => ['id' => SORT_DESC]]
         ]);
 
         $this->load($params);
@@ -61,14 +62,20 @@ class MenuSearch extends Menu
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'lft' => $this->lft,
-            'rgt' => $this->rgt,
-            'depth' => $this->depth,
+            'menu_id' => $this->menu_id,
+            'brands_id' => $this->brands_id,
+            'rate' => $this->rate,
+            'price' => $this->price,
+            'review' => $this->review,
+            'status' => $this->status,
+            'sort_order' => $this->sort_order,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'url', $this->url])
-            ->andFilterWhere(['like', 'text', $this->text]);
+            ->andFilterWhere(['like', 'description', $this->description])
+            ->andFilterWhere(['like', 'image', $this->image]);
 
         return $dataProvider;
     }

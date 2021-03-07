@@ -4,15 +4,15 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\MenuSearch */
+/* @var $searchModel backend\models\product\ProductSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Menus');
+$this->title = Yii::t('app', 'Products');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="menu-index box box-primary">
+<div class="product-index box box-primary">
     <div class="box-header with-border">
-        <?= Html::a(Yii::t('app', 'Create Menu'), ['create'], ['class' => 'btn btn-success btn-flat']) ?>
+        <?= Html::a(Yii::t('app', 'Create Product'), ['create'], ['class' => 'btn btn-success btn-flat']) ?>
     </div>
     <div class="box-body table-responsive no-padding">
         <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -24,12 +24,18 @@ $this->params['breadcrumbs'][] = $this->title;
                 ['class' => 'yii\grid\SerialColumn'],
 
                 'id',
-                'lft',
-                'rgt',
-                'depth',
+                'menu_id',
+                'brands_id',
                 'name',
-                'url:url',
-                'text',
+                'rate',
+                // 'price',
+                // 'review',
+                // 'description',
+                // 'image',
+                // 'status',
+                // 'sort_order',
+                // 'created_at',
+                // 'updated_at',
 
                 ['class' => 'yii\grid\ActionColumn'],
             ],

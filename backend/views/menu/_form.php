@@ -12,8 +12,6 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
     <div class="box-body table-responsive">
 
-        <?= $form->field($model, 'tree')->dropDownList([1,2,3]) ?>
-
         <?= $form->field($model, 'sub')->dropDownList(\yii\helpers\ArrayHelper::map(\common\models\Menu::find()->all(), 'id', 'name')) ?>
 
         <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>

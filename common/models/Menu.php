@@ -19,6 +19,8 @@ use creocoder\nestedsets\NestedSetsBehavior;
  */
 class Menu extends \yii\db\ActiveRecord
 {
+    const DEPTH = 2;
+
     public $sub;
 
     public function behaviors() {
@@ -47,9 +49,9 @@ class Menu extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'url'], 'required'],
-            [['tree', 'lft', 'rgt', 'depth', 'sub'], 'integer'],
+            [['lft', 'rgt', 'depth', 'sub'], 'integer'],
             [['name', 'url', 'text'], 'string', 'max' => 255],
-            [['tree', 'lft', 'rgt', 'depth'], 'safe'],
+            [['lft', 'rgt', 'depth'], 'safe'],
         ];
     }
 
@@ -60,7 +62,6 @@ class Menu extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'tree' => Yii::t('app', 'Tree'),
             'lft' => Yii::t('app', 'Lft'),
             'rgt' => Yii::t('app', 'Rgt'),
             'depth' => Yii::t('app', 'Depth'),
