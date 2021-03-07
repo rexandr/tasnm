@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67aa8f57-ab2d-45f9-baca-c4842ba6a3eb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tasnm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tasnm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/layouts/left.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/layouts/left.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/bufer/m210228_150827_create_user_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150035_create_size_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150058_create_color_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150109_create_catalog_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150122_create_category_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150138_create_brands_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150339_create_product_values_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150442_create_tag_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150459_create_condition_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150517_create_availability_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150533_create_wishlist_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150550_create_compare_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150605_create_product_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150616_create_comment_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150714_create_order_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150728_create_customer_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150739_create_delivery_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150754_create_payment_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/migrations/m210228_150839_create_blog_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop DB scheme.docx" beforeDir="false" afterPath="$PROJECT_DIR$/shop DB scheme.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,92 +16,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="m210307_102038_create_user_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_102038_create_user_table.php">
+      <file leaf-file-name="m210307_112239_add_column_to_user_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_112239_add_column_to_user_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="65" />
+            <state relative-caret-position="51">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <folding>
+                <element signature="e#7#28#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m210307_102217_create_comment_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_102217_create_comment_table.php">
+      <file leaf-file-name="m210307_112339_add_column_to_user_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_112339_add_column_to_user_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m210307_102400_create_wishlist_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_102400_create_wishlist_table.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m210307_101951_create_product_attribute_values_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_101951_create_product_attribute_values_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="24" column="65" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m210307_102419_create_compare_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_102419_create_compare_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="72" lean-forward="true" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m210307_102517_create_blog_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_102517_create_blog_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m210307_102730_create_customer_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_102730_create_customer_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m210307_103049_create_product_tag_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_103049_create_product_tag_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m210307_103239_create_order_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_103239_create_order_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m210307_101600_create_product_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m210307_101600_create_product_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="31" column="65" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="31" selection-end-column="65" />
+            <state relative-caret-position="-510">
+              <folding>
+                <element signature="e#32#40#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,6 +113,8 @@
         <option value="$PROJECT_DIR$/console/migrations/m210307_102730_create_customer_table.php" />
         <option value="$PROJECT_DIR$/console/migrations/m210307_103049_create_product_tag_table.php" />
         <option value="$PROJECT_DIR$/console/migrations/m210307_103239_create_order_table.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m210307_112339_add_column_to_user_table.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m210307_112239_add_column_to_user_table.php" />
       </list>
     </option>
   </component>
@@ -327,13 +247,13 @@
             <path>
               <item name="tasnm" type="b2602c69:ProjectViewProjectNode" />
               <item name="tasnm" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tasnm" type="b2602c69:ProjectViewProjectNode" />
               <item name="tasnm" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -384,24 +304,23 @@
       <option name="presentableId" value="Default" />
       <updated>1614513542917</updated>
       <workItem from="1614513544803" duration="5801000" />
-      <workItem from="1614521681116" duration="27542000" />
+      <workItem from="1614521681116" duration="29151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33343000" />
+    <option name="totallyTimeSpent" value="34952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067115" side_tool="true" weight="0.3988604" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32905984" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32905984" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -428,27 +347,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/console/migrations/m210228_150533_create_wishlist_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/migrations/m210228_150550_create_compare_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/migrations/m210228_150714_create_order_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -650,13 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/migrations/m210307_101600_create_product_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="65" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="31" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/console/migrations/m210307_102400_create_wishlist_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -668,13 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/migrations/m210307_102038_create_user_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -715,8 +599,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/console/migrations/m210307_103239_create_order_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="442">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m210307_101600_create_product_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="65" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="31" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m210307_102038_create_user_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <folding>
+            <element signature="e#32#40#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m210307_112339_add_column_to_user_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m210307_112239_add_column_to_user_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
