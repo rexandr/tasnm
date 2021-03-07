@@ -86,6 +86,7 @@
       <path value="$PROJECT_DIR$/vendor/rmrevin/yii2-fontawesome" />
       <path value="$PROJECT_DIR$/vendor/dmstr/yii2-adminlte-asset" />
       <path value="$PROJECT_DIR$/vendor/cebe/yii2-gravatar" />
+      <path value="$PROJECT_DIR$/vendor/creocoder/yii2-nested-sets" />
     </include_path>
   </component>
 </project>

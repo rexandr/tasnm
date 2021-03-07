@@ -3,20 +3,20 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%brands}}`.
+ * Handles the creation of table `{{%payment}}`.
  */
-class m210228_150138_create_brands_table extends Migration
+class m210307_101009_create_payment_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%brands}}', [
+        $this->createTable('{{%payment}}', [
             'id' => $this->primaryKey(),
-            'brand' => $this->string()->defaultValue(null),
-            'logo' => $this->string()->defaultValue(null),
+            'payment' => $this->string()->notNull(),
             'status' => $this->integer()->defaultValue(null),
+            'sort_order' => $this->integer()->defaultValue(null),
             'created_at' => $this->integer()->defaultValue(null),
             'updated_at' => $this->integer()->defaultValue(null),
         ]);
@@ -27,6 +27,6 @@ class m210228_150138_create_brands_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%brands}}');
+        $this->dropTable('{{%payment}}');
     }
 }

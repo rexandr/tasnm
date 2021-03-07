@@ -3,19 +3,20 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%tag}}`.
+ * Handles the creation of table `{{%product_attribute}}`.
  */
-class m210228_150442_create_tag_table extends Migration
+class m210307_101047_create_product_attribute_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%tag}}', [
+        $this->createTable('{{%product_attribute}}', [
             'id' => $this->primaryKey(),
-            'tag' => $this->string()->notNull(),
+            'attribute' => $this->string()->notNull(),
             'status' => $this->integer()->defaultValue(null),
+            'sort_order' => $this->integer()->defaultValue(null),
             'created_at' => $this->integer()->defaultValue(null),
             'updated_at' => $this->integer()->defaultValue(null),
         ]);
@@ -26,6 +27,6 @@ class m210228_150442_create_tag_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%tag}}');
+        $this->dropTable('{{%product_attribute}}');
     }
 }
