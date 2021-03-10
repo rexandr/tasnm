@@ -9,12 +9,14 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="product-attribute-values-form box box-primary">
+
+    <?php print_r($id) ?>
     <?php $form = ActiveForm::begin(); ?>
     <div class="box-body table-responsive">
 
         <?= $form->field($model, 'product_attribute_id')->dropDownList(\yii\helpers\ArrayHelper::map($productAttributesReposiory->getProductAttributes(), 'id', 'attribute')) ?>
 
-        <?= $form->field($model, 'product_id')->textInput() ?>
+        <?= $form->field($model, 'product_id')->textInput(['value'=>$id]) ?>
 
         <?= $form->field($model, 'value')->textInput(['maxlength' => true]) ?>
 

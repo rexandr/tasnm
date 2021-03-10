@@ -12,6 +12,8 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="product-attribute-values-view box box-primary">
     <div class="box-header">
+        <?= Html::a(Yii::t('app', 'Related product'), ['product/view', 'id' => $model->product_id], ['class' => 'btn btn-success btn-flat']) ?>
+        <?= Html::a(Yii::t('app', 'Next attribute to related product'), ['create', 'id' => $model->product_id], ['class' => 'btn btn-success btn-flat']) ?>
         <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary btn-flat']) ?>
         <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger btn-flat',
