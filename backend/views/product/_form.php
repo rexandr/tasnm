@@ -14,7 +14,11 @@ use yii\helpers\ArrayHelper;
     <?php $form = ActiveForm::begin(); ?>
     <div class="box-body table-responsive">
 
-        <?= $form->field($model, 'menu_id')->dropDownList(ArrayHelper::map($menuRepository->getLowDepthProduct(), 'id', 'name')) ?>
+        <?= $form->field($model, 'menu_id')->dropDownList(ArrayHelper::map($menuRepository->getLowDepthProduct(), 'id',
+            function ($menuRepository)
+            {
+                return $menuRepository->name.' - '.$menuRepository->text;
+            })) ?>
 
         <?= $form->field($model, 'brands_id')->dropDownList(ArrayHelper::map($brandRepository->getBrands(), 'id', 'brand_name')) ?>
 

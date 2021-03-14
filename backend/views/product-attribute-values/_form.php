@@ -10,11 +10,10 @@ use yii\widgets\ActiveForm;
 
 <div class="product-attribute-values-form box box-primary">
 
-    <?php print_r($id) ?>
     <?php $form = ActiveForm::begin(); ?>
     <div class="box-body table-responsive">
 
-        <?= $form->field($model, 'product_attribute_id')->dropDownList(\yii\helpers\ArrayHelper::map($productAttributesReposiory->getProductAttributes(), 'id', 'attribute')) ?>
+        <?= $form->field($model, 'product_attribute_id')->dropDownList(\yii\helpers\ArrayHelper::map($productAttributesRepository->getProductAttributes(), 'id', 'attribute')) ?>
 
         <?= $form->field($model, 'product_id')->textInput(['value'=>$id]) ?>
 
@@ -24,9 +23,9 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'sort_order')->textInput() ?>
 
-        <?= $form->field($model, 'created_at')->textInput() ?>
+<!--        --><?//= $form->field($model, 'created_at')->textInput() ?>
 
-        <?= $form->field($model, 'updated_at')->textInput() ?>
+<!--        --><?//= $form->field($model, 'updated_at')->textInput() ?>
 
     </div>
     <div class="box-footer">

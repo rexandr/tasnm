@@ -4,12 +4,15 @@ namespace backend\controllers;
 
 use backend\models\repositories\BrandRepository;
 use backend\models\repositories\MenuRepository;
+use backend\models\repositories\ProductAttributeValuesRepository;
 use Yii;
 use backend\models\product\Product;
 use backend\models\product\ProductSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\ProductAttributeValues;
+
 
 /**
  * ProductController implements the CRUD actions for Product model.
@@ -53,10 +56,27 @@ class ProductController extends Controller
      */
     public function actionView($id)
     {
+        $productAttributeValuesRepository = new ProductAttributeValuesRepository();
+        $productAttributeValues = $productAttributeValuesRepository->getProductAttributeValues($id);
+
+        //$values = $productAttributeValuesRepository->getProductAttributes();
+
 
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'productAttributeValues' => $productAttributeValues,
+            'values' => $values
         ]);
+    }
+
+
+    protected function findModel($id)
+    {
+        if (($model = Product::findOne($id)) !== null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
     }
 
     /**
@@ -124,12 +144,5 @@ class ProductController extends Controller
      * @return Product the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id)
-    {
-        if (($model = Product::findOne($id)) !== null) {
-            return $model;
-        } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
-        }
-    }
+
 }

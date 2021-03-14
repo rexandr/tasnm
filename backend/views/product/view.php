@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\bootstrap\Modal;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\product\Product */
@@ -21,6 +22,30 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        <?php
+
+        Modal::begin([
+                'header' => '<h2>Draste</h2>',
+                'toggleButton' => ['label' => 'kick me'],
+                'footer' => 'footer',
+        ]);
+
+        echo '<h1>'.$model->name.'</h1>' ;
+        echo '<br>';
+//        echo '<pre>';
+//        print_r($values);
+//        echo '</pre>';
+
+        foreach ($productAttributeValues as $productAttributeValue)
+        {
+            echo $productAttributeValue->value;
+            echo ' - '.$productAttributeValue->product_attribute_id;
+            echo '<br>';
+        }
+
+        Modal::end();
+
+        ?>
     </div>
     <div class="box-body table-responsive no-padding">
         <?= DetailView::widget([

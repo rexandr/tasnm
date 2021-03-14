@@ -59,7 +59,7 @@ class Product extends \common\models\base\ActiveModel
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'menu_id' => Yii::t('app', 'Menu ID'),
+            'menu_id' => Yii::t('app', 'Category'),
             'brands_id' => Yii::t('app', 'Brands ID'),
             'name' => Yii::t('app', 'Name'),
             'rate' => Yii::t('app', 'Rate'),

@@ -69,11 +69,11 @@ class ProductAttributeValuesController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
-            $productAttributesReposiory = new ProductAttributesRepository();
+            $productAttributesRepository = new ProductAttributesRepository();
             return $this->render('create', [
                 'model' => $model,
                 'id' => $id,
-                'productAttributesReposiory' => $productAttributesReposiory
+                'productAttributesRepository' => $productAttributesRepository
             ]);
         }
     }
@@ -91,10 +91,10 @@ class ProductAttributeValuesController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
-            $productAttributesReposiory = new ProductAttributesRepository();
+            $productAttributesRepository = new ProductAttributesRepository();
             return $this->render('update', [
                 'model' => $model,
-                'productAttributesReposiory' => $productAttributesReposiory
+                'productAttributesRepository' => $productAttributesRepository
             ]);
         }
     }
