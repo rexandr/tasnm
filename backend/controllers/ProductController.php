@@ -5,6 +5,7 @@ namespace backend\controllers;
 use backend\models\repositories\BrandRepository;
 use backend\models\repositories\MenuRepository;
 use backend\models\repositories\ProductAttributeValuesRepository;
+use common\models\ProductAttribute;
 use Yii;
 use backend\models\product\Product;
 use backend\models\product\ProductSearch;
@@ -59,13 +60,21 @@ class ProductController extends Controller
         $productAttributeValuesRepository = new ProductAttributeValuesRepository();
         $productAttributeValues = $productAttributeValuesRepository->getProductAttributeValues($id);
 
-        //$values = $productAttributeValuesRepository->getProductAttributes();
+        //$product = Product::findOne($id);
 
+        //$values = $product->productAttributeValues;
+        //$valuesArray = $product->productAttributeValues->select('id')->asArray()->all();
+        $values = $this->findModel($id)->productAttributeValues;
+
+        //$attributes = ProductAttribute::findAll(['in', 'id',[$values->product_attribute_id]]);
+        $attributes = ProductAttribute::findAll([1,2,3]);
+        //$attributes = ProductAttribute::find();
 
         return $this->render('view', [
             'model' => $this->findModel($id),
             'productAttributeValues' => $productAttributeValues,
-            'values' => $values
+            'values' => $values,
+            'attributes' => $attributes
         ]);
     }
 

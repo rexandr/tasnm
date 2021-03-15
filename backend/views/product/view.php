@@ -32,9 +32,28 @@ $this->params['breadcrumbs'][] = $this->title;
 
         echo '<h1>'.$model->name.'</h1>' ;
         echo '<br>';
-//        echo '<pre>';
-//        print_r($values);
-//        echo '</pre>';
+
+        echo '<pre>';
+        foreach ($attributes as $attribute)
+        {
+            echo $attribute->attribute;
+            //echo ' - '.$value->product_attribute_id;
+            echo '<br>';
+        }
+        //print_r($attributes);
+        echo '</pre>';
+
+
+
+        echo '<pre>';
+        foreach ($values as $value)
+        {
+            echo $value->value;
+            echo ' - '.$value->product_attribute_id;
+            echo '<br>';
+        }
+        //print_r($attributes);
+        echo '</pre>';
 
         foreach ($productAttributeValues as $productAttributeValue)
         {
